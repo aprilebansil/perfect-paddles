@@ -1,0 +1,42 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.containercenter {
+  max-width: 960px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.banner {}
+
+.banner__span--enjoy {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.banner__span {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn-signup {
+  background-color: #E2574C;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  font-size: 14px;
+  font-family: roboto;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 50px auto;
+  display: block;
+  cursor: pointer;
