@@ -1,17 +1,44 @@
+
+.containerheader {
+  background-color: black;
+  img {
+    sh
+  }
+}
+
+.containerbanner {
+  line-height: 10px;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
+  border: 1px solid pink;
+
+  /* background */
+
+
   background: rgba(0, 0, 0, 0.1);
+  background-image: url("images/sunset-kayak.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  text-align: center;
 }
 
-.containercenter {
+.containerabout {
   max-width: 960px;
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.banner {}
+.containerrentals
+
+.containerlocation
+
+.containerfooter
 
 .banner__span--enjoy {
   text-transform: uppercase;
@@ -20,6 +47,18 @@
 
 .banner__span {
   display: block;
+}
+
+.banner__title-enjoy {
+  font-size: 12px
+}
+
+.banner__title-goutdoors {
+  font-size: 40px
+}
+
+.banner__title-fromthewater {
+  font-size: 16px
 }
 
 img {
@@ -40,3 +79,20 @@ img {
   margin: 50px auto;
   display: block;
   cursor: pointer;
+
+/* styles are applied to ipad and desktop width because both hold true for 1200px*/
+
+
+/* tablet */
+@media {min-width: 600px} {
+    img {
+      max-width: 40%;
+    }
+  }
+
+/* desktop */
+@media {min-width: 1100px} {
+    img {
+      max-width: 30%;
+    }
+  }
