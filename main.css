@@ -1,44 +1,47 @@
+.container {
+  max-width: 960px;
+}
 
 .containerheader {
   background-color: black;
   img {
-    sh
+
   }
 }
 
 .containerbanner {
-  line-height: 10px;
-}
-
-.container {
-  max-width: 960px;
   margin: 0 auto;
-  border: 1px solid pink;
-
-  /* background */
-
-
-  background: rgba(0, 0, 0, 0.1);
-  background-image: url("images/sunset-kayak.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-
   text-align: center;
+  background-image: url("images/kayak-bkgd.jpg")
 }
 
 .containerabout {
   max-width: 960px;
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.1);
   text-align: center;
+  font-family: "Pacifico", cursive;
+  font-size: 16px
 }
 
-.containerrentals
+.containerrentals {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-size: 16px
+}
 
-.containerlocation
+.containerlocation {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-size: 16px
+}
 
-.containerfooter
+.footer {
+  background-color: #3E3E3E;
+  color: #FFFFFF;
+  height: 250px;
+  padding: 30px;
+  margin-top: 50px;
+}
 
 .banner__span--enjoy {
   text-transform: uppercase;
@@ -46,23 +49,44 @@
 }
 
 .banner__span {
-  display: block;
+  display: inline-block;
 }
 
 .banner__title-enjoy {
+  font-family: 'karla', sans-serif;
   font-size: 12px
 }
 
 .banner__title-goutdoors {
+  font-family: 'Pacifico', cursive;
   font-size: 40px
 }
 
 .banner__title-fromthewater {
+  font-family: 'Pacifico', cursive;
   font-size: 16px
 }
 
+.rentals-description {
+  text-align: left;
+}
+
+p {
+  font-family: 'karla', sans-serif;
+}
+
 img {
-  max-width: 100%;
+  max-width: 20%;
+
+}
+
+.aboutimg {
+  box-shadow: 3px 3px 0px #dadada;
+}
+
+li {
+  display: inline-block;
+  font-family: 'karla', sans-serif;
 }
 
 .btn-signup {
@@ -73,12 +97,17 @@ img {
   padding: 12px 28px;
   text-align: center;
   font-size: 14px;
-  font-family: roboto;
+  font-family: 'karla' sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   margin: 50px auto;
   display: block;
   cursor: pointer;
+}
+
+article {
+  font-family: 'karla', sans-serif;
+}
 
 /* styles are applied to ipad and desktop width because both hold true for 1200px*/
 
