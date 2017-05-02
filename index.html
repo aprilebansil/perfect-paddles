@@ -7,26 +7,26 @@
     <meta name="description" content="Kayak rental company located in Vancouver.">
     <meta name="author" content="Aprile Bansil">
     <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Karla|Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Pacifico" rel="stylesheet">
   </head>
 
   <body>
 
     <div>
 
+<!--have the article relative positioning to the background image so that it's centered to it-->
+
     <header>
-      <section>
-      <div class ="containerheader">
-      <img src="images/perfect-paddles-logo.svg" alt="Perfect Paddles logo">
-    </div>
-  </section>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#rentals">Rentals</a></li>
-          <li><a href="#location">Location</a></li>
-        </ul>
-      </nav>
+      <section class ="nav">
+        <div class ="containerheader">
+          <img class ="paddles" src="images/perfect-paddles-logo.svg" alt="Perfect Paddles logo">
+              <ul>
+                <li class="navbar"><a href="#about">About</a></li>
+                <li class="navbar"><a href="#rentals">Rentals</a></li>
+                <li class="navbar"><a href="#location">Location</a></li>
+              </ul>
+        </div>
+      </section>
     </header>
 
       <section class="banner">
@@ -36,7 +36,7 @@
           <span class="banner__title-goutdoors">Great Outdoors</span>
           <span class="banner__title-fromthewater">from the water</span>
       </h1>
-      <article>
+      <article class ="rentcanoes">
         <p>
           Rent our canoes year-round, take a lesson, or join a group tour.
         </p>
@@ -61,57 +61,58 @@
 
       <section>
         <div class ="containerrentals">
-        <h2>Rentals</h2>
-        <span class="rentals-description">
-          <p>All rental prices include basic paddles, life jackets, splash protection, and a safety demonstration.</p>
+          <h2>Rentals</h2>
+            <span class="rentals-description">
+              <p>All rental prices include basic paddles, life jackets, splash protection, and a safety demonstration.</p>
 
-          <p>Please note that we require 24 hours notice for all cancellations and late returns will be charged accordingly.</p>
+              <p>Please note that we require 24 hours notice for all cancellations and late returns will be charged accordingly.</p>
 
-          <p>Call <a href="tel:+6046046040">604-604-6040</a> to book now!</p>
-        </span>
-</div>
+              <p>Call <a href="tel:+6046046040">604-604-6040</a> to book now!</p>
+            </span>
+        </div>
 
-<div>
-      <table>
-        <thead>
-          <tr>
-            <th>Duration</th>
-            <th>Single Kayak</th>
-            <th>Double Kayak</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2 hours</td>
-            <td>$35</td>
-            <td>$55</td>
-          </tr>
-          <tr>
-            <td>1 Day</td>
-            <td>$90</td>
-            <td>$130</td>
-          </tr>
-          <tr>
-            <td>Extra Day</td>
-            <td>$45</td>
-            <td>$65</td>
-          </tr>
-          <tr>
-            <td>Season Pass</td>
-            <td>$249</td>
-            <td>$349</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-      </section>
+        <div>
+          <table class ="rentaltable">
+            <thead>
+              <tr>
+                <th>Duration</th>
+                <th>Single Kayak</th>
+                <th>Double Kayak</th>
+              </tr>
+            </thead>
+
+          <tbody>
+            <tr>
+              <td>2 hours</td>
+              <td>$35</td>
+              <td>$55</td>
+            </tr>
+            <tr>
+              <td>1 Day</td>
+              <td>$90</td>
+              <td>$130</td>
+            </tr>
+            <tr>
+              <td>Extra Day</td>
+              <td>$45</td>
+              <td>$65</td>
+            </tr>
+            <tr>
+              <td>Season Pass</td>
+              <td>$249</td>
+              <td>$349</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
       <section>
         <div class ="containerlocation">
-        <h2>Location</h2>
-        <p>
-          Come visit us at our location on Cornwall Avenue and Yew Street in Vancouver:
-        </p>
+          <h2>Location</h2>
+          <p>
+            Come visit us at our location on Cornwall Avenue and Yew Street in Vancouver:
+          </p>
 
         <iframe
           class="map"

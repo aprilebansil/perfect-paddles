@@ -1,18 +1,53 @@
+h2 {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-size: 16px
+}
+
+p {
+  font-family: 'karla', sans-serif;
+}
+
+.body {
+  margin-top: 0px;
+}
+
 .container {
   max-width: 960px;
 }
 
-.containerheader {
+.nav {
+  margin-top; 0px;
+  position: fixed;
+  width: 100%;
+  height: 70px;
   background-color: black;
-  img {
+}
 
-  }
+.paddles {
+  position: relative;
+  width: 20%;
+  padding-left: 15px;
+  float: left;
+}
+
+.navbar {
+  font-family: 'karla', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  float: right;
+  top: 0px;
+  left: 200px;
+  padding-right: 10px;
+  margin: 20px;
 }
 
 .containerbanner {
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
-  background-image: url("images/kayak-bkgd.jpg")
+  padding: 20px;
+
+  background-image: url("images/kayak-bkgd.jpg");
 }
 
 .containerabout {
@@ -24,19 +59,20 @@
 }
 
 .containerrentals {
-  text-align: center;
-  font-family: "Pacifico", cursive;
-  font-size: 16px
+  clear: both;
+  float: left;
+  left: 40%;
+  padding: 20px;
 }
 
-.containerlocation {
-  text-align: center;
-  font-family: "Pacifico", cursive;
-  font-size: 16px
+.rentaltable {
+  clear: both;
+  float: right;
+  right: 60%;
 }
 
 .footer {
-  background-color: #3E3E3E;
+  background-color: #242424;
   color: #FFFFFF;
   height: 250px;
   padding: 30px;
@@ -71,22 +107,9 @@
   text-align: left;
 }
 
-p {
-  font-family: 'karla', sans-serif;
-}
-
-img {
-  max-width: 20%;
-
-}
-
 .aboutimg {
+  width: 20%;
   box-shadow: 3px 3px 0px #dadada;
-}
-
-li {
-  display: inline-block;
-  font-family: 'karla', sans-serif;
 }
 
 .btn-signup {
