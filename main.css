@@ -7,10 +7,27 @@ h2 {
 
 p {
   font-family: 'karla', sans-serif;
+  font-size: 16px;
+  color: #2d2d2d;
 }
 
-article {
-  color: #FFFFFF;
+img aboutimg {
+  width: 30%;
+  box-shadow: 1px 0px 3px 1px #dadada
+}
+
+.aboutimg {
+  display: inline;
+  position: static;
+}
+
+.canoedescrip {
+  display: inline;
+  margin: 0 auto;
+  background-color: rgba(0,0,0, 0.5);
+  height: 100%;
+  width: 600px;
+  padding: 15px;
 }
 
 .body {
@@ -19,20 +36,30 @@ article {
 
 .container {
   min-width: 960px;
-  margin-top: 70px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.rentcanoes {
+  font-family: 'karla', sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
 }
 
 .nav {
   top: 0px;
   position: fixed;
   width: 100%;
-  height: 70px;
+  height: 40px;
+  padding-right: 50px;
+  padding-bottom: 30px;
   background-color: black;
 }
 
 .paddles {
   position: relative;
-  width: 200px;
+  width: 230px;
+  padding-top: 15px;
   padding-left: 15px;
   float: left;
 }
@@ -51,15 +78,18 @@ a {
   left: 200px;
   padding-right: 10px;
   margin: 20px;
+  margin-top: 15px;
 }
 
-.containerbanner {
+.banner {
   margin: auto;
   margin-top: 70px;
   text-align: center;
   padding: 70px;
 
-  background-image: url("images/kayak-bkgd.jpg");
+  background-image: url("images/kayak-bkgd.jpg"), linear-gradient(
+    45deg, #f0f9ff 0%, #cbebff 75%, #a1dbff 100%
+    );
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -70,12 +100,6 @@ a {
   justify-content: center;
   flex-flow: row wrap;
   text-align: center;
-}
-
-.containerabout img {
-  width: 100%;
-  margin: .5em 0;
-  box-shadow: 1px 0px 3px 1px #dadada;
 }
 
 /* .aboutimg {
@@ -151,6 +175,13 @@ a {
 
 /* styles are applied to ipad and desktop width because both hold true for 1200px*/
 /* apply your styles to different viewports from smallest to largest, largest being bottom and being able to override what's above */
+
+/* mobile */
+@media {min-width: 300px} {
+    img {
+      max-width: 30%;
+    }
+  }
 
 /* tablet */
 @media {min-width: 600px} {
