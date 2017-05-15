@@ -11,39 +11,10 @@ p {
   color: #2d2d2d;
 }
 
-img aboutimg {
-  width: 30%;
-  box-shadow: 1px 0px 3px 1px #dadada
-}
-
-.aboutimg {
-  display: inline;
-  position: static;
-}
-
-.canoedescrip {
-  display: inline;
-  margin: 0 auto;
-  background-color: rgba(0,0,0, 0.5);
-  height: 100%;
-  width: 600px;
-  padding: 15px;
-}
-
-.body {
-  margin: 0px;
-}
-
-.container {
-  min-width: 960px;
+container {
+  min-width: 1140px;
   margin: 0 auto;
   position: relative;
-}
-
-.rentcanoes {
-  font-family: 'karla', sans-serif;
-  font-size: 16px;
-  color: #FFFFFF;
 }
 
 .nav {
@@ -54,9 +25,10 @@ img aboutimg {
   padding-right: 50px;
   padding-bottom: 30px;
   background-color: black;
+  z-index: 1;
 }
 
-.paddles {
+.logo {
   position: relative;
   width: 230px;
   padding-top: 15px;
@@ -79,6 +51,47 @@ a {
   padding-right: 10px;
   margin: 20px;
   margin-top: 15px;
+  list-style: none;
+}
+
+.button {
+  background-color: #E2574C;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'karla' sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 50px auto;
+  display: block;
+  cursor: pointer;
+}
+.button: hover {
+  background-color: #b64036;
+  border-color: #b64036;
+  color: white;
+}
+
+.canoedescrip {
+  display: inline;
+  margin: 0 auto;
+  background-color: rgba(0,0,0, 0.5);
+  height: 100%;
+  width: 600px;
+  padding: 15px;
+}
+
+body {
+  margin: 0px;
+}
+
+.rentcanoes {
+  font-family: 'karla', sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
 }
 
 .banner {
@@ -95,11 +108,13 @@ a {
   background-position: center;
 }
 
-.containerabout {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  text-align: center;
+.about {
+  margin-left: 15px;
+}
+
+img .about {
+  width: 100%;
+  box-shadow: 10px 0px 3px 1px #dadada;
 }
 
 /* .aboutimg {
@@ -108,17 +123,27 @@ a {
 }
 */
 
-.containerrentals {
-  clear: both;
+.rentals-description {
   float: left;
   left: 40%;
   padding: 20px;
 }
 
 .rentaltable {
-  clear: both;
   float: right;
   right: 60%;
+  padding-top: 10px;
+  margin-right: 30px;
+  font-family: "karla", sans-serif;
+}
+
+.thead {
+  font-weight: bold;
+  background-color: #e0e0e0;
+}
+
+.location {
+  clear: both;
 }
 
 .footer {
@@ -127,6 +152,21 @@ a {
   height: 250px;
   padding: 30px;
   margin-top: 50px;
+}
+
+.footertext {
+  font-family: "karla", sans-serif;
+  color: #FFFFFF;
+  float: left;
+  left: 60%;
+  padding-top: 10px
+}
+
+.socials {
+  font-family: "karla", sans-serif;
+  float: right;
+  right: 40%;
+  padding-top: 10px;
 }
 
 .banner__span {
@@ -157,41 +197,27 @@ a {
   text-align: left;
 }
 
-.btn-signup {
-  background-color: #E2574C;
-  border: none;
-  border-radius: 30px;
-  color: white;
-  padding: 12px 28px;
-  text-align: center;
-  font-size: 14px;
-  font-family: 'karla' sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin: 50px auto;
-  display: block;
-  cursor: pointer;
-}
+
 
 /* styles are applied to ipad and desktop width because both hold true for 1200px*/
 /* apply your styles to different viewports from smallest to largest, largest being bottom and being able to override what's above */
 
 /* mobile */
-@media {min-width: 300px} {
+@media (min-width: 320px) {
     img {
       max-width: 30%;
     }
   }
 
 /* tablet */
-@media {min-width: 600px} {
+@media (min-width: 600px) {
     img {
       max-width: 40%;
     }
   }
 
 /* desktop */
-@media {min-width: 1100px} {
+@media (min-width: 1400px) {
     img {
       max-width: 30%;
     }
