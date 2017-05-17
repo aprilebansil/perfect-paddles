@@ -9,26 +9,29 @@
     <meta name="author" content="Aprile Bansil">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Pacifico" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <div>
-
-        <!--have the article relative positioning to the background image so that it's centered to it-->
+        <!--have the article relative positioned to the background image so that it's centered to it-->
 
         <header>
-            <section class="nav">
-                <img class="logo" src="images/perfect-paddles-logo.svg" alt="Perfect Paddles logo">
+          <section>
+            <nav>
+          <div class="topnav">
+          <img class="logo" src="images/perfect-paddles-logo.svg" alt="Perfect Paddles logo">
                 <ul class="navbar">
-                    <li class="navbar"><a href="#about">About</a>
+                    <li><a href="#about">About</a>
                     </li>
-                    <li class="navbar"><a href="#rentals">Rentals</a>
+                    <li><a href="#rentals">Rentals</a>
                     </li>
-                    <li class="navbar"><a href="#location">Location</a>
+                    <li><a href="#location">Location</a>
                     </li>
                 </ul>
-            </section>
+            </div>
+          </nav>
+          </section>
         </header>
 
         <section class="banner">
@@ -36,12 +39,12 @@
           <span class="banner__title-enjoy">Enjoy the<br/></span>
           <span class="banner__title-goutdoors">Great Outdoors<br/></span>
           <span class="banner__title-fromthewater">from the water<br/></span>
-      </h1>
-            <div class="canoedescrip">
+            </h1>
+            <article>
                 <span class="rentcanoes">
           Rent our canoes year-round, take a lesson, or join a group tour.
-        </span>
-            </div>
+                </span>
+            </article>
             <button class="button" type="button" name="button">Sign me up!</button>
         </section>
 
@@ -118,8 +121,11 @@
                     <p>
                         Come visit us at our location on Cornwall Avenue and Yew Street in Vancouver:
                     </p>
+                </div>
+            </section>
 
-                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.2014148051353!2d-123.1571647843109!3d49.27258057933022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486724ac9841e85%3A0x870e9cdab5d0e83b!2sYew+St+%26+Cornwall+Ave%2C+Vancouver%2C+BC!5e0!3m2!1sen!2sca!4v1492649910704" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <section class="map">
+                <div><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.2014148051353!2d-123.1571647843109!3d49.27258057933022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486724ac9841e85%3A0x870e9cdab5d0e83b!2sYew+St+%26+Cornwall+Ave%2C+Vancouver%2C+BC!5e0!3m2!1sen!2sca!4v1492649910704" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </section>
         </main>
@@ -130,31 +136,42 @@
                     <span class="footertext">
                         ©2017 Perfect Paddles Kayak Co. <br/>
                         Powered by HTML and CSS.<br/><br/>
-                        <a href="tel:+6046046040">604-604-6040</a>
+                        <a href="tel:+6046046040">604-604-6040.</a>
                         <a href="mailto:info@perfectpaddles.com">info@perfectpaddles.com</a><br/><br/>
                         Cornwall Avenue & Yew Street<br/>
                         Vancouver, BC, Canada
                     </span>
 
+
                 </section>
 
                 <section>
                     <nav>
-                        <ul class ="socials">
+                        <ul class="socials">
                             <li>
-                                <a href="https://facebook.com" target="_blank">Facebook</a>
+                                <a href="https://www.facebook.com" target="_blank">
+                                  <i class="fa fa-fw fa-facebook" aria-hidden="true"></i>
+                                </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com" target="_blank">Twitter</a>
+                                <a href="https://twitter.com" target="_blank">
+                                  <i class="fa fa-fw fa-twitter" aria-hidden="true"></i>
+                                </a>
                             </li>
                             <li>
-                                <a href="https://instagram.com" target="_blank">Instagram</a>
+                                <a href="https://instagram.com" target="_blank">
+                                  <i class="fa fa-fw fa-instagram" aria-hidden="true"></i>
+                                </a>
                             </li>
                             <li>
-                                <a href="https://pinterest.com" target="_blank">Pinterest</a>
+                                <a href="https://pinterest.com" target="_blank">
+                                  <i class="fa fa-fw fa-pinterest" aria-hidden="true"></i>
+                                </a>
                             </li>
                             <li>
-                                <a href="https://plus.google.com" target="_blank">Google+</a>
+                                <a href="https://plus.google.com" target="_blank">
+                                  <i class="fa fa-fw fa-google-plus" aria-hidden="true"></i>
+                                </a>
                             </li>
                         </ul>
                     </nav>
@@ -162,7 +179,6 @@
             </footer>
         </div>
 
-    </div>
 </body>
 
 </html>
