@@ -20,13 +20,13 @@
           <section>
             <nav>
           <div class="topnav">
-          <img class="logo" src="images/perfect-paddles-logo.svg" alt="Perfect Paddles logo">
+          <img id="logo" src="images/perfect-paddles-logo.svg" alt="Perfect Paddles logo">
                 <ul class="navbar">
-                    <li><a href="#about">About</a>
+                    <li><a class="nav" href="#about">About</a>
                     </li>
-                    <li><a href="#rentals">Rentals</a>
+                    <li><a class="nav" href="#rentals">Rentals</a>
                     </li>
-                    <li><a href="#location">Location</a>
+                    <li><a class="nav" href="#location">Location</a>
                     </li>
                 </ul>
             </div>
@@ -58,10 +58,10 @@
                     </p>
                 </div>
                 <!--{Put images here} -->
-                <div class="aboutimg">
-                    <img class="about" src="images/sunset-kayak.jpg" alt="Sunset Kayak">
-                    <img class="about" src="images/coffee-adventure.jpg" alt="Cup of coffee">
-                    <img class="about" src="images/girl-in-kayak.jpg" alt="Girl in Kayak">
+                <div id="aboutimgs">
+                    <img class="aboutimg" src="images/sunset-kayak.jpg" alt="Sunset Kayak">
+                    <img class="aboutimg" src="images/coffee-adventure.jpg" alt="Cup of coffee">
+                    <img class="aboutimg" src="images/girl-in-kayak.jpg" alt="Girl in Kayak">
                 </div>
             </section>
 
@@ -74,7 +74,7 @@
 
               <p>Please note that we require 24 hours notice for all cancellations and late returns will be charged accordingly.</p>
 
-              <p>Call <a href="tel:+6046046040">604-604-6040</a> to book now!</p>
+              <p>Call<a id="call" href="tel:+6046046040">604-604-6040</a>to book now!</p>
             </span>
                 </div>
 
@@ -130,54 +130,56 @@
             </section>
         </main>
 
-        <div class="footer">
             <footer>
                 <section>
-                    <span class="footertext">
+                    <p id="footertext">
                         ©2017 Perfect Paddles Kayak Co. <br/>
                         Powered by HTML and CSS.<br/><br/>
                         <a href="tel:+6046046040">604-604-6040.</a>
-                        <a href="mailto:info@perfectpaddles.com">info@perfectpaddles.com</a><br/><br/>
-                        Cornwall Avenue & Yew Street<br/>
+                        <a href="mailto:info@perfectpaddles.com"><u>info@perfectpaddles.com</u></a><br/><br/>
+                    <span id="intersection">Cornwall Avenue & Yew Street<br/>
                         Vancouver, BC, Canada
                     </span>
-
-
+                    </p>
                 </section>
 
                 <section>
-                    <nav>
-                        <ul class="socials">
-                            <li>
+
+                        <ul class="socialbar">
+                            <li class="social">
                                 <a href="https://www.facebook.com" target="_blank">
-                                  <i class="fa fa-fw fa-facebook" aria-hidden="true"></i>
+                                  <i class="fa fa-fw fa-facebook" aria-hidden="true"></i>Facebook
                                 </a>
                             </li>
-                            <li>
+                            <li class="social">
                                 <a href="https://twitter.com" target="_blank">
-                                  <i class="fa fa-fw fa-twitter" aria-hidden="true"></i>
+                                  <i class="fa fa-fw fa-twitter" aria-hidden="true"></i>Twitter
                                 </a>
                             </li>
-                            <li>
-                                <a href="https://instagram.com" target="_blank">
-                                  <i class="fa fa-fw fa-instagram" aria-hidden="true"></i>
+                            <li class="social">
+                                <a  href="https://instagram.com" target="_blank">
+                                  <i class="fa fa-fw fa-instagram" aria-hidden="true"></i>Instagram
                                 </a>
                             </li>
-                            <li>
+                            <li class="social">
                                 <a href="https://pinterest.com" target="_blank">
-                                  <i class="fa fa-fw fa-pinterest" aria-hidden="true"></i>
+                                  <i class="fa fa-fw fa-pinterest" aria-hidden="true"></i>Pinterest
                                 </a>
                             </li>
-                            <li>
+                            <li class="social">
                                 <a href="https://plus.google.com" target="_blank">
-                                  <i class="fa fa-fw fa-google-plus" aria-hidden="true"></i>
+                                  <i class="fa fa-fw fa-google-plus" aria-hidden="true"></i>Google+
                                 </a>
                             </li>
                         </ul>
-                    </nav>
                 </section>
             </footer>
-        </div>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.js"
+  integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+  crossorigin="anonymous"></script>
+<script src="script.js"></script>
 
 </body>
 
